@@ -1,16 +1,17 @@
 # EpubReader 📚
 
+> **Note**: This is a fork of the original [EpubReader](https://github.com/ne0rrmatrix/EpubReader) by [ne0rrmatrix](https://github.com/ne0rrmatrix), modified to support Tailscale IP addresses for Calibre server connections. All credit for the original application goes to the original creator.
+
 <div align="center">
 
 ***A versatile and user-friendly EPUB reader/viewer for Windows, Android, iOS, and macOS***
 
 *Enjoy your favorite ebooks with extensive customization options and robust support for various EPUB formats*
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ne0rrmatrix_EpubReader&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ne0rrmatrix_EpubReader)
 [![.NET MAUI](https://img.shields.io/badge/.NET%20MAUI-Cross%20Platform-blue)](https://dotnet.microsoft.com/en-us/apps/maui)
-[![License](https://img.shields.io/github/license/ne0rrmatrix/EpubReader)](LICENSE.txt)
-[![GitHub stars](https://img.shields.io/github/stars/ne0rrmatrix/EpubReader)](https://github.com/ne0rrmatrix/EpubReader/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/ne0rrmatrix/EpubReader)](https://github.com/ne0rrmatrix/EpubReader/issues)
+[![License](https://img.shields.io/github/license/LightWraith8268/EpubReader)](LICENSE.txt)
+[![GitHub stars](https://img.shields.io/github/stars/LightWraith8268/EpubReader)](https://github.com/LightWraith8268/EpubReader/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/LightWraith8268/EpubReader)](https://github.com/LightWraith8268/EpubReader/issues)
 
 </div>
 
@@ -307,7 +308,7 @@ dotnet build EpubReader/EpubReader.csproj -f net10.0-android
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/ne0rrmatrix/EpubReader.git
+git clone https://github.com/LightWraith8268/EpubReader.git
 cd EpubReader
 ```
 

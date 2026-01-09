@@ -135,16 +135,19 @@ public class NetworkChecker
 		"10.0.0.0/8",      // 10.0.0.0 - 10.255.255.255
     "172.16.0.0/12",   // 172.16.0.0 - 172.31.255.255
     "192.168.0.0/16",  // 192.168.0.0 - 192.168.255.255
-    
+
     // IPv4 Additional Local Ranges
     "127.0.0.0/8",     // 127.0.0.0 - 127.255.255.255 (Loopback)
     "169.254.0.0/16",  // 169.254.0.0 - 169.254.255.255 (Link-local/APIPA)
-    
+
+    // IPv4 CGNAT Range (used by Tailscale and similar VPN services)
+    "100.64.0.0/10",   // 100.64.0.0 - 100.127.255.255 (Shared Address Space - RFC 6598, Tailscale)
+
     // IPv6 Private/Local Ranges
     "::1/128",         // ::1 (IPv6 loopback)
     "fc00::/7",        // fc00:: - fdff:: (Unique Local Addresses - ULA)
     "fe80::/10",       // fe80:: - febf:: (Link-local addresses)
-    
+
     // IPv6 Documentation/Reserved ranges (optional - for completeness)
     "2001:db8::/32",   // 2001:db8:: (Documentation prefix - RFC 3849)
     "::/128",          // :: (Unspecified address)
