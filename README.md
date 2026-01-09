@@ -32,6 +32,24 @@
 
 ---
 
+## 🔧 Fork Modifications
+
+### Tailscale Support for Calibre Servers
+
+This fork adds support for connecting to Calibre content servers via **Tailscale** IP addresses. The original application restricted HTTP connections to traditional private IP ranges (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16), which prevented connections to Calibre servers accessed through Tailscale VPN.
+
+**What changed:**
+- Added Tailscale's CGNAT IP range (`100.64.0.0/10`) to the list of trusted local IP addresses
+- This allows HTTP connections to Calibre servers on Tailscale IPs without requiring HTTPS certificates
+- No other functionality has been modified from the original application
+
+**Why this matters:**
+- Access your Calibre library from anywhere using Tailscale's secure mesh VPN
+- No need to set up HTTPS certificates for internal Tailscale connections
+- Seamless integration with your existing Calibre content server setup
+
+---
+
 ## ✨ Features
 
 ### 🌐 Cross-Platform Compatibility
@@ -144,17 +162,7 @@ Available on **Windows**, **Android**, **iOS**, and **macOS** with native perfor
 
 ## 🚀 Getting Started
 
-<div align="center">
-
-### Download Now
-
-| Platform | Download Link |
-|----------|---------------|
-| **Android** | [<img src="assets/android.png" />](https://play.google.com/store/apps/details?id=com.companyname.epubreader) |
-| **Windows** | [<img src="assets/windows.png" />](https://apps.microsoft.com/detail/9n3t9qnkk7vx?hl=en-GB&gl=CA) |
-
-
-</div>
+To use this fork, you'll need to build it from source (see instructions below). Pre-built releases may be available in the [Releases](https://github.com/LightWraith8268/EpubReader/releases) section.
 
 ---
 
