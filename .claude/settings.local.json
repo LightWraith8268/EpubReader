@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"C:\\\\Program Files\\\\dotnet\\\\dotnet.exe\" nuget search CommunityToolkit.Maui --prerelease)",
+      "Bash(findstr:*)",
+      "WebSearch"
+    ]
+  }
+}

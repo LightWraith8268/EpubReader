@@ -11,6 +11,12 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+# Ensure dotnet is in path
+$dotnetPath = "C:\Program Files\dotnet"
+if (-not ($env:PATH -like "*$dotnetPath*")) {
+    $env:PATH = "$dotnetPath;$env:PATH"
+}
+
 # Set dummy Firebase values for build process
 $env:FIREBASE_API_KEY = "dummy-api-key-for-local-build"
 $env:FIREBASE_AUTH_DOMAIN = "dummy-app.firebaseapp.com"
