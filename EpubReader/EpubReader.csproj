@@ -150,6 +150,8 @@
     <AndroidUseAapt2>True</AndroidUseAapt2>
     <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
     <AndroidPackageFormat>apk</AndroidPackageFormat>
+    <AndroidEnableAssemblyCompression>False</AndroidEnableAssemblyCompression>
+    <PublishTrimmed>false</PublishTrimmed>
   </PropertyGroup>
 
 	<!-- Fixes Static Registrar causing Linker error: https://github.com/xamarin/xamarin-macios/blob/main/docs/managed-static-registrar.md -->

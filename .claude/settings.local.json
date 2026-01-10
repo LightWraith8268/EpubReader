@@ -3,7 +3,12 @@
     "allow": [
       "Bash(\"C:\\\\Program Files\\\\dotnet\\\\dotnet.exe\" nuget search CommunityToolkit.Maui --prerelease)",
       "Bash(findstr:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(adb connect:*)",
+      "Bash(adb -s 100.100.1.1:42065 install:*)",
+      "Bash(adb:*)",
+      "Bash(python:*)",
+      "Bash(powershell -Command:*)"
     ]
   }
 }
